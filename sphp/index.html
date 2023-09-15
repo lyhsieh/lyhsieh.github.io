@@ -164,15 +164,23 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We propose ImGeoNet, a multi-view image-based 3D object detection framework that models a 3D space by an image-induced geometry-aware voxel representation.
-            Unlike previous methods which aggregate 2D features into 3D voxels without considering geometry, ImGeoNet learns to induce geometry from multi-view images to alleviate the confusion arising from voxels of free space, and during the inference phase, only images from multiple views are required.
-            Besides, a powerful pre-trained 2D feature extractor can be leveraged by our representation, leading to a more robust performance.
-          </p>
-          <p>
-            To evaluate the effectiveness of ImGeoNet, we conduct quantitative and qualitative experiments on three indoor datasets, namely ARKitScenes, ScanNetV2, and ScanNet200.
-            The results demonstrate that ImGeoNet outperforms the current state-of-the-art multi-view image-based method, ImVoxelNet, on all three datasets in terms of detection accuracy.
-            In addition, ImGeoNet shows great data efficiency by achieving results comparable to ImVoxelNet with 100 views while utilizing only 40 views.
-            Furthermore, our studies indicate that our proposed image-induced geometry-aware representation can enable image-based methods to attain superior detection accuracy than the seminal point cloud-based method, VoteNet, in two practical scenarios: (1) scenarios where point clouds are sparse and noisy, such as in ARKitScenes, and (2) scenarios involve diverse object classes, particularly classes of small objects, as in the case in ScanNet200.
+            We propose a sparse and privacy-enhanced representation for Human 
+            Pose Estimation (HPE). Given a perspective camera, we use a 
+            proprietary motion vector sensor(MVS) to extract an edge image and 
+            a two-directional motion vector image at each time frame. Both edge 
+            and motion vector images are sparse and contain much less information 
+            (i.e., enhancing human privacy). We advocate that edge information 
+            is essential for HPE, and motion vectors complement edge information 
+            during fast movements. We propose a fusion network leveraging recent 
+            advances in sparse convolution used typically for 3D voxels to 
+            efficiently process our proposed sparse representation, which achieves 
+            about 13x speed-up and 96% reduction in FLOPs. We collect an in-house 
+            edge and motion vector dataset with 16 types of actions by 40 users 
+            using the proprietary MVS. Our method outperforms individual modalities 
+            using only edge or motion vector images. Finally, we validate the 
+            privacy-enhanced quality of our sparse representation through face 
+            recognition on CelebA (a large face dataset) and a user study on our 
+            in-house dataset.
           </p>
         </div>
       </div>
