@@ -68,8 +68,8 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">ImGeoNet: Image-induced Geometry-aware Voxel Representation for Multi-view 3D Object Detection</h1>
-          <h2 class="title is-size-3 publication-title">ICCV'23</h2>
+          <h1 class="title is-1 publication-title">Sparse and Privacy-enhanced Representation for Human Pose Estimation</h1>
+          <h2 class="title is-size-3 publication-title">BMVC 2023</h2>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="">Ting-Ying Lin*</a><sup>1</sup>,
@@ -133,9 +133,23 @@
         <div class="content has-text-justified">
           <br>
           <p>
-            In contrast to prior works that disregard the underlying geometry by directly averaging feature volume across multiple views,
-            our proposed successfully preserves the <strong>geometric structure</strong> with respect to the ground truth while effectively reducing the number of voxels in free space.
-            This geometry-aware voxel representation significantly improves 3D object detection performance.
+            We propose a sparse and privacy-enhanced representation for Human 
+            Pose Estimation (HPE). Given a perspective camera, we use a 
+            proprietary motion vector sensor(MVS) to extract an edge image and 
+            a two-directional motion vector image at each time frame. Both edge 
+            and motion vector images are sparse and contain much less information 
+            (i.e., enhancing human privacy). We advocate that edge information 
+            is essential for HPE, and motion vectors complement edge information 
+            during fast movements. We propose a fusion network leveraging recent 
+            advances in sparse convolution used typically for 3D voxels to 
+            efficiently process our proposed sparse representation, which achieves 
+            about 13x speed-up and 96% reduction in FLOPs. We collect an in-house 
+            edge and motion vector dataset with 16 types of actions by 40 users 
+            using the proprietary MVS. Our method outperforms individual modalities 
+            using only edge or motion vector images. Finally, we validate the 
+            privacy-enhanced quality of our sparse representation through face 
+            recognition on CelebA (a large face dataset) and a user study on our 
+            in-house dataset.
           </p>
         </div>
       </div>
