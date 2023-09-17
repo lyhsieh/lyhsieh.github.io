@@ -6,7 +6,7 @@ subtitle: M.S. Student | Computer Vision | Human Pose Estimation
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: leo.jpg
   image_circular: false # crops the image to make it circular
   address: >
     <center>Hsinchu, Taiwan</center>
