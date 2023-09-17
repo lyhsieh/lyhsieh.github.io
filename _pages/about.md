@@ -25,7 +25,7 @@ Put your address / P.O. box / other info right below your picture. You can also 
 
 Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
 
-<font size="5">Lin-Yung Hsieh (Leo)</font> received his B.S. degree in Electrical Engineering from National Tsing Hua University in 2022. Currently, he's studying master degree at the department of Electrical Engineering, National Tsing Hua University. He's also a member of Vision Science Lab, which is instructed by Prof. Min Sun. 
+<b>Lin-Yung Hsieh (Leo)</b> received his B.S. degree in Electrical Engineering from National Tsing Hua University in 2022. Currently, he's studying master degree at the department of Electrical Engineering, National Tsing Hua University. He's also a member of Vision Science Lab, which is instructed by Prof. Min Sun. 
 
 In 2020, he joined Vision Science Lab (same as present) and selected active learning as his topic for undergraduate research, with the goal of improving the performance of CarePlus.ai, a home care system using AI. In the same year, he won the first place in MeiChu Hackathon Competition, during which he developed a cheating detection program for online games. Besides, he worked for Prof. Jing-Jia Liou as a teaching assistant in Embedding System Laboratory course in 2021. Later, he obtained an internship as a software engineer at Industrial Technology Research Institute (ITRI), in charge of implementing quantization on the feature maps in neural networks. 
 
