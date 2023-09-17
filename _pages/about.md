@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: M.S. Student | Computer Vision | Human Pose Estimation
 
 profile:
   align: right
