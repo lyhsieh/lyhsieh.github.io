@@ -8,7 +8,14 @@ profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  address: 
+  address: >
+    <center>Hsinchu, Taiwan</center>
+      <center>
+          <a href="https://drive.google.com/file/d/1BcWuL6r6XDuAJ8-KpwtaatH3_aoo7n30/view?usp=sharing">CV</a> | 
+          <a href="https://www.linkedin.com/in/linyunghsieh/">LinkedIn</a> <br>
+          <a href="https://github.com/lyhsieh">GitHub</a> |
+          <a href="mailto:leohsieh0814@gmail.com">Email</a>
+      </center>
 
 news: true  # includes a list of news items
 latest_posts: true  # includes a list of the newest posts
