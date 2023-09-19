@@ -133,7 +133,7 @@
         <div class="content has-text-justified">
           <br>
           <p>
-            SPHP dataset.
+            SPHP dataset. Our motion vector sensor (MVS) extracts edge images and two-directional motion vector images at each time frame. We also provide annotated body joints for human poses and corresponding grayscale images.
           </p>
         </div>
       </div>
@@ -188,67 +188,106 @@
       </div>
     </div> -->
 
-    <!-- Result. -->
-    <!-- <div class="columns is-centered has-text-centered">
+    <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Quantitative Results</h2>
+        <h2 class="title is-3">Collected Actions</h2>
         <div class="table_wrapper">
-          <table class="table is-hoverable is-bordered">
+          <style type="text/css">
+            .tg  {border-collapse:collapse;border-color:#bbb;border-spacing:0;}
+            .tg td{background-color:#E0FFEB;border-color:#bbb;border-style:solid;border-width:1px;color:#594F4F;
+              font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
+            .tg th{background-color:#9DE0AD;border-color:#bbb;border-style:solid;border-width:1px;color:#493F3F;
+              font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+            .tg .tg-baqh{text-align:center;vertical-align:top}
+            .tg .tg-8d8j{text-align:center;vertical-align:bottom}
+            </style>
+            <center>
+            <table class="tg">
             <thead>
               <tr>
-                <th scope="col" style="vertical-align:middle;text-align:center;" rowspan="2">Method</th>
-                <th scope="col" style="vertical-align:middle;text-align:center;" rowspan="2">Input</th>
-                <th scope="col" colspan="2">(1) Noisy & sparse &#9729;&#65039;</th>
-                <th scope="col" colspan="1">(2) Diverse objects &#129327;</th>
-                <th scope="col" colspan="2">(3) Benchmark &#9878;&#65039;</th>
-              </tr>
-              <tr>
-                <th scope="col">mAP@0.25</th>
-                <th scope="col">mAP@0.5</th>
-                <th scope="col">mAP@0.25</th>
-                <th scope="col">mAP@0.25</th>
-                <th scope="col">mAP@0.5</th>
+                <th class="tg-baqh"><b>ID#</b></th>
+                <th class="tg-baqh"><b>Class#</b></th>
+                <th class="tg-baqh"><b>Movement</b></th>
+                <th class="tg-baqh"><b>ID#</b></th>
+                <th class="tg-baqh"><b>Class#</b></th>
+                <th class="tg-baqh"><b>Movement</b></th>
               </tr>
             </thead>
-            <tr color="red">
-              <td scope="col" style="text-align:left"><span class="highlight">ImGeoNet</span></td>
-              <td scope="col">RGB</td>
-              <td scope="col"><span class="highlight">60.2</span></td>
-              <td scope="col"><span class="highlight">43.4</span></td>
-              <td scope="col"><span class="highlight">22.3</span></td>
-              <td scope="col">54.8</td>
-              <td scope="col">28.4</td>
-            </tr>
-            <tr>
-              <td scope="col" style="text-align:left">ImVoxelNet</td>
-              <td scope="col">RGB</td>
-              <td scope="col">58.0</td>
-              <td scope="col">38.8</td>
-              <td scope="col">19.0</td>
-              <td scope="col">48.7</td>
-              <td scope="col">23.8</td>
-            </tr>
-            <tr>
-              <td scope="col" style="text-align:left">VoteNet</td>
-              <td scope="col">Point cloud (costly!!)</td>
-              <td scope="col">53.3</td>
-              <td scope="col">38.5</td>
-              <td scope="col">19.8</td>
-              <td scope="col"><span class="highlight">58.6</span></td>
-              <td scope="col"><span class="highlight">33.5</span></td>
-            </tr>
-          </table>
-        </div>
+            <tbody>
+              <tr>
+                <td class="tg-baqh">1</td>
+                <td class="tg-8d8j">1</td>
+                <td class="tg-baqh">Arm abduction</td>
+                <td class="tg-baqh">9</td>
+                <td class="tg-baqh">3</td>
+                <td class="tg-baqh">Walk in place</td>
+              </tr>
+              <tr>
+                <td class="tg-baqh">2</td>
+                <td class="tg-8d8j">1</td>
+                <td class="tg-baqh">Arm bicep curl</td>
+                <td class="tg-baqh">10</td>
+                <td class="tg-baqh">3</td>
+                <td class="tg-baqh">Squat</td>
+              </tr>
+              <tr>
+                <td class="tg-baqh">3</td>
+                <td class="tg-8d8j">1</td>
+                <td class="tg-baqh">Wave hello</td>
+                <td class="tg-baqh">11</td>
+                <td class="tg-baqh">4</td>
+                <td class="tg-baqh">Jump in place</td>
+              </tr>
+              <tr>
+                <td class="tg-baqh">4</td>
+                <td class="tg-8d8j">1</td>
+                <td class="tg-baqh">Punch up forward</td>
+                <td class="tg-baqh">12</td>
+                <td class="tg-baqh">4</td>
+                <td class="tg-baqh">Jog in place</td>
+              </tr>
+              <tr>
+                <td class="tg-baqh">5</td>
+                <td class="tg-8d8j">2</td>
+                <td class="tg-baqh">Leg knee lift</td>
+                <td class="tg-baqh">13</td>
+                <td class="tg-baqh">4</td>
+                <td class="tg-baqh">Jumping jack</td>
+              </tr>
+              <tr>
+                <td class="tg-baqh">6</td>
+                <td class="tg-8d8j">2</td>
+                <td class="tg-baqh">Leg abduction</td>
+                <td class="tg-baqh">14</td>
+                <td class="tg-baqh">3</td>
+                <td class="tg-baqh">Standing side bend</td>
+              </tr>
+              <tr>
+                <td class="tg-baqh">7</td>
+                <td class="tg-8d8j">2</td>
+                <td class="tg-baqh">Leg pulling</td>
+                <td class="tg-baqh">15</td>
+                <td class="tg-baqh">4</td>
+                <td class="tg-baqh">Hop on one foot</td>
+              </tr>
+              <tr>
+                <td class="tg-baqh">8</td>
+                <td class="tg-baqh">4</td>
+                <td class="tg-baqh">Elbow-to-knee</td>
+                <td class="tg-baqh">16</td>
+                <td class="tg-baqh">3</td>
+                <td class="tg-baqh">Roll wrists &amp; ankles</td>
+              </tr>
+            </tbody>
+            </table>
+            </center>
         <div class="content has-text-justified">
           <p>
-            In practical situations, (1) depth images often exhibit noise and sparsity, as seen in ARKitScenes, and (2) objects can display considerable variation, as exemplified by ScanNet200.
-            We demonstrate that ImGeoNet surpasses prior techniques in addressing these real-world conditions.
-            (3) Lastly, we evaluate ImGeoNet against previous approaches using the standardized ScanNet benchmark, comprising superior depth images and point clouds.
-            Although VoteNet exhibits superior accuracy in this case, it's worth noting that point cloud-based methods are constrained by reliance on expensive 3D sensor data.
+            hello
           </p>
         </div>
       </div>
-    </div> -->
+    </div>
     <!-- Result. -->
     <!-- <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
