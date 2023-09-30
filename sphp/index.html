@@ -335,6 +335,32 @@
         <center><img src="./static/images/visualization.jpg" width="100%"></center>
       </div>
     </div> -->
+
+    <!-- Fusion Model -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Fusion Model</h2>
+        <center><img src="static/images/early_fusion3d.png" width="70%"></center>
+          <div class="content has-text-justified">
+            <p>
+              Edge and motion vector information complement each other. While edge 
+              is sufficient for detecting clear and non-blurred body joints, 
+              incorporating motion vectors into our model can effectively address 
+              the challenges posed by fast movements and overlapping boundaries, 
+              which may confuse edge-based HPE models. 
+              <br>
+              <br>
+              Hence, we aim to combine the complementary information of edge and 
+              motion vectors while keeping our model compact and efficient. We 
+              directly concatenate an edge image and a two-directional motion 
+              vector image, proposing the early fusion model (referred to as FS) 
+              as illustrated in the figure below. Our FS model can leverage 
+              various single-branch network architectures designed for compactness 
+              and efficiency.
+            </p>
+          </div>
+      </div>
+    </div>
   </div>
 </section>
 
