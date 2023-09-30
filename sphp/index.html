@@ -312,13 +312,35 @@
         </div>
       </div>
     </div>
-    <!-- Result. -->
-    <!-- <div class="columns is-centered has-text-centered">
+    
+    <!-- Sparse Representation -->
+    <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Qualitative Results</h2>
-        <center><img src="./static/images/visualization.jpg" width="100%"></center>
+        <h2 class="title is-3">Sparse Representation</h2>
+          <div class="content has-text-justified">
+            <p>
+              <ul>
+                <li><b>Edge Image</b></li>
+                MVS uses an efficient hardware implementation of edge detection, 
+                similar to Canny edge detection, to generate edge 
+                images. Each pixel in the edge image has a value within the range 
+                of {0, 255}. A higher value indicates a stronger intensity of 
+                the edge.
+                <br>
+                <br>
+                <li><b>Motion Vector</b></li>
+                Inspired by the motion detection of the Drosophila visual system
+                and designed with patent-pending pixel-sensing technology, MVS 
+                detects vertical and horizontal motion vectors, denoted as 
+                MV$_X$ and MV$_Y$, by analyzing changes in illumination. 
+                Each value falls within the range of $\{-128, 128\}$. The magnitude 
+                and sign of a value represent the strength and direction of 
+                motion.
+              </ul>
+            </p>
+          </div>
       </div>
-    </div> -->
+    </div>
 
     <!-- Fusion Model -->
     <div class="columns is-centered has-text-centered">
