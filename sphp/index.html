@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
 
-<script type="text/x-mathjax-config">
+<!-- <script type="text/x-mathjax-config">
   MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 </script>
 <script type="text/javascript"
   src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
+</script> -->
 
 
 <head>
+  <script type="text/javascript"
+  src="static/js/LaTeXMathML.js">
+  </script>
+
   <meta charset="utf-8">
   <meta name="description"
         content="Sparse and Privacy-enhanced Representation for Human Pose Estimation">
@@ -172,7 +176,7 @@
           <p>
             We propose a sparse and privacy-enhanced representation for Human 
             Pose Estimation (HPE). Given a perspective camera, we use a 
-            proprietary motion vector sensor(MVS) to extract an edge image and 
+            proprietary motion vector sensor (MVS) to extract an edge image and 
             a two-directional motion vector image at each time frame. Both edge 
             and motion vector images are sparse and contain much less information 
             (i.e., enhancing human privacy). We advocate that edge information 
@@ -292,6 +296,11 @@
         <div class="content has-text-justified">
           <p>
             <br>
+            We introduce the Sparse and Privacy-enhanced Dataset for Human Pose 
+            Estimation (<b>SPHP</b>), which consists of synchronized, 
+            complementary images of edge and motion vectors along with ground 
+            truth labels for 13 joints.
+
             We collect data from 40 participants (20 male and 20 female). 
             Participants performed 16 fitness-related actions, which are 
             categorized into four classes based on the type of movement: 
@@ -332,7 +341,7 @@
                 Inspired by the motion detection of the Drosophila visual system
                 and designed with patent-pending pixel-sensing technology, MVS 
                 detects vertical and horizontal motion vectors, denoted as 
-                MV$_X$ and MV$_Y$, by analyzing changes in illumination. 
+                $MV_X$ and $MV_Y$, by analyzing changes in illumination. 
                 Each value falls within the range of $\{-128, 128\}$. The magnitude 
                 and sign of a value represent the strength and direction of 
                 motion.
