@@ -309,10 +309,10 @@
             Participants performed 16 fitness-related actions, which are 
             categorized into four classes based on the type of movement: 
             <ul>
-              <li>C1: upper-body movements</li>
-              <li>C2: lower-body movements</li>
-              <li>C3: slow whole-body movements</li>
-              <li>C4: fast whole-body movements</li>
+              <li><b>C1:</b> upper-body movements</li>
+              <li><b>C2:</b> lower-body movements</li>
+              <li><b>C3:</b> slow whole-body movements</li>
+              <li><b>C4:</b> fast whole-body movements</li>
             </ul>
             To diversify the viewing angles of our dataset, we apply a novel 
             strategy to capture each action from multiple perspectives. 
@@ -387,6 +387,11 @@
         <h2 class="title is-3">Evaluation Metric</h2>
           <div class="content has-text-justified">
             <p>
+              Mean Per Joint Position Error (<b>MPJPE</b>) is chosen for evaluation. 
+              It calculates the Euclidean distance between predicted positions 
+              $\hat{y_{i}}$ and ground truth positions $y_{i}$ for each joint, 
+              where $N$ is the number of joints.
+
               <center>
                 $\displaystyle \textrm{MPJPE} = \frac{1}{N}\sum_{i} \| y_{i}-\hat{y_{i}}\|$
               </center>
