@@ -4,7 +4,7 @@ title: MeiChu Hackathon
 description: 2020 梅竹黑客松
 img: assets/img/proj_preview/meichu.jpg
 importance: 1
-category: Competition
+category: 
 giscus_comments: true
 ---
 
