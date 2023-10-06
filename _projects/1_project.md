@@ -12,7 +12,7 @@ giscus_comments: true
 2020/10/24 (Sat.) - 2020/10/25 (Sun.)
 
 ## Topic
-<a href="https://www.logitech.com/zh-tw" target="_blank">Logitech International</a>: </b>Ethical gaming world</b>
+<a href="https://www.logitech.com/zh-tw" target="_blank">Logitech International</a>: <b>Ethical gaming world</b>
 
 ## Motivation
 There are increasingly more online games in recent years. When playing, we donâ€™t want to encounter cheating behaviors that will decrease our will to play. Thus, we want to develop a <b>cheating detection system</b> that can detect unethical actions in online games.
@@ -33,9 +33,9 @@ There are increasingly more online games in recent years. When playing, we donâ€
 * etc
 
 ## Solution: Machine Learning
-We surveyed a [paper [1]](src/meichu/paper.pdf) focusing on remote suspicious mouse intrusion, which gave us some inspiration. We believed that when a player cheats in a game, the mouse track must be different. So, we used <b>random forest</b> to train a <b>one-class classifier</b>, excepting the model after training could tell whether the input mouse track comes from the same person. By doing so, no matter the player installs gaming hack or asks his/her friends to play for him/her, our system could always tell us that the behavior was abnormal. Visit our [presentation file](src/meichu/presentation.pdf) for detailed descriptions.
+We surveyed a [paper [1]](assets/img/meichu/paper.pdf) focusing on remote suspicious mouse intrusion, which gave us some inspiration. We believed that when a player cheats in a game, the mouse track must be different. So, we used <b>random forest</b> to train a <b>one-class classifier</b>, excepting the model after training could tell whether the input mouse track comes from the same person. By doing so, no matter the player installs gaming hack or asks his/her friends to play for him/her, our system could always tell us that the behavior was abnormal. Visit our [presentation file](assets/img/meichu/presentation.pdf) for detailed descriptions.
 
-<img src="src/meichu/flow.png">
+<img src="assets/img/meichu/flow.png">
 
 ## Data Collection and Preprocessing
 * Game: CS-GO
@@ -43,18 +43,18 @@ We surveyed a [paper [1]](src/meichu/paper.pdf) focusing on remote suspicious mo
 * Repository: Link
 * Data recording: Python
 
-<img src="src/meichu/collect.png">
+<img src="assets/img/meichu/collect.png">
 
 ## Awards
 Out of hundreds of people, We won the <b>FIRST place</b> of Logitech and the <b>FIRST place</b> in the second round competing with other champions from other enterprises including <a href="https://linecorp.com/zh-hant/" target="_blank">LINE</a> and <a href="https://tw.micron.com/" target="_blank">Micron Taiwan</a>. We were guaranteed to join the summer internship of Logitech and were reported in news.
 
-<img src="src/meichu/first_I.jpeg">
-<img src="src/meichu/first_II.jpeg">
+<img src="assets/img/meichu/first_I.jpeg">
+<img src="assets/img/meichu/first_II.jpeg">
 
 ## Certificates of Merit
 <div style="margin:0 auto;">
-  <img style="width:50%;height:auto;display:inline-block;margin-left:-4px;" src="src/meichu/cert1.png">
-  <img style="width:50%;height:auto;display:inline-block;margin-left:-4px;" src="src/meichu/cert2.png">
+  <img style="width:50%;height:auto;display:inline-block;margin-left:-4px;" src="assets/img/meichu/cert1.png">
+  <img style="width:50%;height:auto;display:inline-block;margin-left:-4px;" src="assets/img/meichu/cert2.png">
 </div>
 
 ## Related News
