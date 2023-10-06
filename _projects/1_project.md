@@ -21,7 +21,7 @@ There are increasingly more online games in recent years. When playing, we donâ€
 
 * Handsome Leo (Me)
 * <a href="https://bwbwchen.github.io/" target="_blank">Bo-Wei Chen</a>
-* <a href="https://github.com/Jack24658735" target="_blank">Jack Liu</a>
+* <a href="https://jack24658735.github.io/" target="_blank">Jack Liu</a>
 * <a href="https://github.com/bowen1248" target="_blank">Bowen Lee</a>
 * <a href="https://github.com/HowardWang0915" target="_blank">Howard Wang</a>
 
