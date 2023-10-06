@@ -35,7 +35,7 @@ There are increasingly more online games in recent years. When playing, we donâ€
 ## Solution: Machine Learning
 We surveyed a [paper [1]](assets/img/meichu/paper.pdf) focusing on remote suspicious mouse intrusion, which gave us some inspiration. We believed that when a player cheats in a game, the mouse track must be different. So, we used <b>random forest</b> to train a <b>one-class classifier</b>, excepting the model after training could tell whether the input mouse track comes from the same person. By doing so, no matter the player installs gaming hack or asks his/her friends to play for him/her, our system could always tell us that the behavior was abnormal. Visit our [presentation file](assets/img/meichu/presentation.pdf) for detailed descriptions.
 
-<img src="assets/img/meichu/flow.png">
+<img src="../assets/img/meichu/flow.png">
 
 ## Data Collection and Preprocessing
 * Game: CS-GO
