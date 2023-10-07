@@ -46,7 +46,7 @@ We surveyed a [paper [1]](assets/img/meichu/paper.pdf) focusing on remote suspic
 * Data recording: Python
 
 <center>
-{% include figure.html path="assets/img/meichu/collect.png" title="collect" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/meichu/collect.png" width="70%" title="collect" class="img-fluid rounded z-depth-1" %}
 </center>
 
 
@@ -55,8 +55,8 @@ Out of hundreds of people, We won the <b>FIRST place</b> of Logitech and the <b>
 
 
 <center>
-{% include figure.html path="assets/img/meichu/first_I.jpeg" width="50%" title="f1" class="img-fluid rounded z-depth-1" %}
-{% include figure.html path="assets/img/meichu/first_II.jpeg" title="f2" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/meichu/first_I.jpeg" width="70%" title="f1" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/meichu/first_II.jpeg" width="70%" title="f2" class="img-fluid rounded z-depth-1" %}
 </center>
 
 
