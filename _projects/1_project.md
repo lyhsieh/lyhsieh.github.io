@@ -76,7 +76,13 @@ Out of hundreds of people, We won the <b>FIRST place</b> of Logitech and the <b>
 * <a href="https://www.ettoday.net/news/20201026/1840005.htm" target="_blank">ETtoday News</a>
 
 ## Repository
-* <a href="https://github.com/lyhsieh/Meichu2020_Team_726" target="_blank">Link</a>
+<!-- * <a href="https://github.com/lyhsieh/Meichu2020_Team_726" target="_blank">Link</a> -->
+{% if site.data.repositories.github_repos %}
+<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+  {% include lyhsieh/Meichu2020_Team_726.html repository=Meichu2020_Team_726 %}
+</div>
+{% endif %}
+
 
 ## Reference
 [1] M. Antal and E. Egyed-Zsigmond. Intrusion Detection Using Mouse Dynamics. 2018
