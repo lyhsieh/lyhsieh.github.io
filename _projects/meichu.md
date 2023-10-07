@@ -83,8 +83,8 @@ Out of hundreds of people, We won the <b>FIRST place</b> of Logitech and the <b>
 {% endif %}
 
 
-## Reference
-[1] M. Antal and E. Egyed-Zsigmond. Intrusion Detection Using Mouse Dynamics. 2018
+<!-- ## Reference
+[1] M. Antal and E. Egyed-Zsigmond. Intrusion Detection Using Mouse Dynamics. 2018 -->
 
 
 
