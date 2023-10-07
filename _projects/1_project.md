@@ -45,13 +45,20 @@ We surveyed a [paper [1]](assets/img/meichu/paper.pdf) focusing on remote suspic
 * Repository: Link
 * Data recording: Python
 
-<img src="../assets/img/meichu/collect.png">
+<center>
+{% include figure.html path="assets/img/meichu/collect.png" title="collect" class="img-fluid rounded z-depth-1" %}
+</center>
+
 
 ## Awards
 Out of hundreds of people, We won the <b>FIRST place</b> of Logitech and the <b>FIRST place</b> in the second round competing with other champions from other enterprises including <a href="https://linecorp.com/zh-hant/" target="_blank">LINE</a> and <a href="https://tw.micron.com/" target="_blank">Micron Taiwan</a>. We were guaranteed to join the summer internship of Logitech and were reported in news.
 
-<img src="assets/img/meichu/first_I.jpeg">
-<img src="assets/img/meichu/first_II.jpeg">
+
+<center>
+{% include figure.html path="assets/img/meichu/first_I.jpeg.png" title="f1" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/meichu/first_II.jpeg.png" title="f2" class="img-fluid rounded z-depth-1" %}
+</center>
+
 
 ## Certificates of Merit
 <div style="margin:0 auto;">
@@ -65,7 +72,7 @@ Out of hundreds of people, We won the <b>FIRST place</b> of Logitech and the <b>
 * <a href="https://www.ettoday.net/news/20201026/1840005.htm" target="_blank">ETtoday News</a>
 
 ## Repository
-* <a href="https://github.com/LeoTheBestCoder/Meichu2020_Team_726" target="_blank">Link</a>
+* <a href="https://github.com/lyhsieh/Meichu2020_Team_726" target="_blank">Link</a>
 
 ## Reference
 [1] M. Antal and E. Egyed-Zsigmond. Intrusion Detection Using Mouse Dynamics. 2018
