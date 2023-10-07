@@ -55,7 +55,7 @@ Out of hundreds of people, We won the <b>FIRST place</b> of Logitech and the <b>
 
 
 <center>
-{% include figure.html path="assets/img/meichu/first_I.jpeg" title="f1" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/meichu/first_I.jpeg" width="50%" title="f1" class="img-fluid rounded z-depth-1" %}
 {% include figure.html path="assets/img/meichu/first_II.jpeg" title="f2" class="img-fluid rounded z-depth-1" %}
 </center>
 
