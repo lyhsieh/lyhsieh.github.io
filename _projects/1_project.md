@@ -63,10 +63,10 @@ Out of hundreds of people, We won the <b>FIRST place</b> of Logitech and the <b>
 ## Certificates of Merit
 <div class="row justify-content-sm-center">
     <div class="col-sm-6 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/cert1.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/meichu/cert1.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm-6 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/cert2.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/meichu/cert2.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
