@@ -79,7 +79,7 @@ Out of hundreds of people, We won the <b>FIRST place</b> of Logitech and the <b>
 <!-- * <a href="https://github.com/lyhsieh/Meichu2020_Team_726" target="_blank">Link</a> -->
 {% if site.data.repositories.github_repos %}
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-  {% include repository/repo.html repository=lyhsieh/Meichu2020_Team_726 %}
+  {% include repository/repo.html repository="lyhsieh/Meichu2020_Team_726" %}
 </div>
 {% endif %}
 
