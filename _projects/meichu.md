@@ -49,24 +49,26 @@ We surveyed a [paper [1]](../../assets/img/meichu/paper.pdf) focusing on remote 
 {% include figure.html path="assets/img/meichu/collect.png" width="70%" title="collect" class="img-fluid rounded z-depth-1" %}
 </center>
 
+## Presentation File
+<embed src="../../assets/img/meichu/presentation.pdf" type="application/pdf">
 
 ## Awards
 Out of hundreds of people, We won the <b>FIRST place</b> of Logitech and the <b>FIRST place</b> in the second round competing with other champions from other enterprises including <a href="https://linecorp.com/zh-hant/" target="_blank">LINE</a> and <a href="https://tw.micron.com/" target="_blank">Micron Taiwan</a>. We were guaranteed to join the summer internship of Logitech and were reported in news.
 
 
 <center>
-{% include figure.html path="assets/img/meichu/first_I.jpeg" width="70%" title="f1" class="img-fluid rounded z-depth-1" %}
-{% include figure.html path="assets/img/meichu/first_II.jpeg" width="70%" title="f2" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/meichu/first_I.jpeg" width="70%" title="first place" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/meichu/first_II.jpeg" width="70%" title="first place" class="img-fluid rounded z-depth-1" %}
 </center>
 
 
 ## Certificates of Merit
 <div class="row justify-content-sm-center">
     <div class="col-sm-6 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/meichu/cert1.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/meichu/cert1.png" title="certificate of merit" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm-6 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/meichu/cert2.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/meichu/cert2.png" title="certificate of merit" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
