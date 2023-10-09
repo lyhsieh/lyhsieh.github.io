@@ -34,7 +34,7 @@ There are increasingly more online games in recent years. When playing, we donâ€
 * etc
 
 ## Solution: Machine Learning
-We surveyed a [paper [1]](../../assets/img/meichu/paper.pdf) focusing on remote suspicious mouse intrusion, which gave us some inspiration. We believed that when a player cheats in a game, the mouse track must be different. So, we used <b>random forest</b> to train a <b>one-class classifier</b>, excepting the model after training could tell whether the input mouse track comes from the same person. By doing so, no matter the player installs gaming hack or asks his/her friends to play for him/her, our system could always tell us that the behavior was abnormal. Visit our [presentation file](../../assets/img/meichu/presentation.pdf) for detailed descriptions.
+We surveyed a [paper](../../assets/img/meichu/paper.pdf) focusing on remote suspicious mouse intrusion, which gave us some inspiration. We believed that when a player cheats in a game, the mouse track must be different. So, we used <b>random forest</b> to train a <b>one-class classifier</b>, excepting the model after training could tell whether the input mouse track comes from the same person. By doing so, no matter the player installs gaming hack or asks his/her friends to play for him/her, our system could always tell us that the behavior was abnormal. Visit our [presentation file](../../assets/img/meichu/presentation.pdf) for detailed descriptions.
 
 <center>
 {% include figure.html path="assets/img/meichu/flow.png" title="flow" class="img-fluid rounded z-depth-1" %}
@@ -49,10 +49,6 @@ We surveyed a [paper [1]](../../assets/img/meichu/paper.pdf) focusing on remote 
 {% include figure.html path="assets/img/meichu/collect.png" width="70%" title="collect" class="img-fluid rounded z-depth-1" %}
 </center>
 
-## Presentation File
-<center>
-    <embed src="../../assets/img/meichu/presentation.pdf" width='70%' height='250%'>
-</center>
 
 ## Awards
 Out of hundreds of people, We won the <b>FIRST place</b> of Logitech and the <b>FIRST place</b> in the second round competing with other champions from other enterprises including <a href="https://linecorp.com/zh-hant/" target="_blank">LINE</a> and <a href="https://tw.micron.com/" target="_blank">Micron Taiwan</a>. We were guaranteed to join the summer internship of Logitech and were reported in news.
