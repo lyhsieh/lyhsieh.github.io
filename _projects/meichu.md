@@ -50,7 +50,9 @@ We surveyed a [paper [1]](../../assets/img/meichu/paper.pdf) focusing on remote 
 </center>
 
 ## Presentation File
-<embed src="../../assets/img/meichu/presentation.pdf" width='70%'>
+<center>
+    <embed src="../../assets/img/meichu/presentation.pdf" width='70%' height='250%'>
+</center>
 
 ## Awards
 Out of hundreds of people, We won the <b>FIRST place</b> of Logitech and the <b>FIRST place</b> in the second round competing with other champions from other enterprises including <a href="https://linecorp.com/zh-hant/" target="_blank">LINE</a> and <a href="https://tw.micron.com/" target="_blank">Micron Taiwan</a>. We were guaranteed to join the summer internship of Logitech and were reported in news.
