@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html>
+
+  
+
+<head>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
+  <script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Sparse and Privacy-enhanced Representation for Human Pose Estimation">
+  <meta name="keywords" content="Human pose estimation, motion vector, privacy">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sparse and Privacy-enhanced Representation for Human Pose Estimation</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.ico">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <!-- <script src="./static/js/index.js"></script> -->
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://lyhsieh.github.io">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Sparse and Privacy-enhanced Representation for Human Pose Estimation</h1>
+          <h2 class="title is-size-3 publication-title">BMVC 2023</h2>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="">Ting-Ying Lin*</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://lyhsieh.github.io">Lin-Yung Hsieh*</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://fuenwang.phd/" target="_blank">Fu-En Wang</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="">Wen-Shen Wuen</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://aliensunmin.github.io" target="_blank">Min Sun</a><sup>1</sup>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>National Tsing Hua University</span>
+            <span class="author-block"><sup>2</sup>Novatek Microelectronics Corp.</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2309.09515"
+                   class="external-link button is-normal is-rounded is-dark"
+                   target="_blank">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/lyhsieh/SPHP"
+                   class="external-link button is-normal is-rounded is-dark"
+                   target="_blank">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://youtu.be/DMj2iXnLSCQ?si=25lxBsZMXbmPM3MG"
+                   class="external-link button is-normal is-rounded is-dark"
+                   target="_blank">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                  </a>
+              </span>
+              <!-- DATASET Link. -->
+              <span class="link-block">
+                <a href="https://forms.gle/w8zRf2KAjz3Q6TX59"
+                   class="external-link button is-normal is-rounded is-dark"
+                   target="_blank">
+                  <span class="icon">
+                      <i class="fas fa-light fa-folder-open"></i>
+                  </span>
+                  <span>Dataset</span>
+                </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <center><img src="static/images/sphp.gif" width="70%"></center>
+        <div class="content has-text-justified">
+          <br>
+          <p>
+            SPHP dataset. Our motion vector sensor (MVS) extracts edge images 
+            and two-directional motion vector images at each time frame. We also 
+            provide annotated body joints for human poses and corresponding 
+            grayscale images.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We propose a sparse and privacy-enhanced representation for Human 
+            Pose Estimation (HPE). Given a perspective camera, we use a 
+            proprietary motion vector sensor (MVS) to extract an edge image and 
+            a two-directional motion vector image at each time frame. Both edge 
+            and motion vector images are sparse and contain much less information 
+            (i.e., enhancing human privacy). We advocate that edge information 
+            is essential for HPE, and motion vectors complement edge information 
+            during fast movements. 
+            <br>
+            <br>
+            We propose a fusion network leveraging recent 
+            advances in sparse convolution used typically for 3D voxels to 
+            efficiently process our proposed sparse representation, which achieves 
+            about 13x speed-up and 96% reduction in FLOPs. We collect an in-house 
+            edge and motion vector dataset with 16 types of actions by 40 users 
+            using the proprietary MVS. Our method outperforms individual modalities 
+            using only edge or motion vector images. Finally, we validate the 
+            privacy-enhanced quality of our sparse representation through face 
+            recognition on CelebA (a large face dataset) and a user study on our 
+            in-house dataset.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">SPHP Dataset</h2>
+        <div class="table_wrapper">
+          <style type="text/css">
+            .tg  {border-collapse:collapse;border-color:#bbb;border-spacing:0;}
+            .tg td{background-color:#E0FFEB;border-color:#bbb;border-style:solid;border-width:1px;color:#594F4F;
+              font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
+            .tg th{background-color:#9DE0AD;border-color:#bbb;border-style:solid;border-width:1px;color:#493F3F;
+              font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+            .tg .tg-baqh{text-align:center;vertical-align:top}
+            .tg .tg-8d8j{text-align:center;vertical-align:bottom}
+            </style>
+            <center>
+            <table class="tg">
+            <thead>
+              <tr>
+                <th class="tg-baqh"><b>ID#</b></th>
+                <th class="tg-baqh"><b>Class#</b></th>
+                <th class="tg-baqh"><b>Movement</b></th>
+                <th class="tg-baqh"><b>ID#</b></th>
+                <th class="tg-baqh"><b>Class#</b></th>
+                <th class="tg-baqh"><b>Movement</b></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tg-baqh">1</td>
+                <td class="tg-8d8j">1</td>
+                <td class="tg-baqh">Arm abduction</td>
+                <td class="tg-baqh">9</td>
+                <td class="tg-baqh">3</td>
+                <td class="tg-baqh">Walk in place</td>
+              </tr>
+              <tr>
+                <td class="tg-baqh">2</td>
+                <td class="tg-8d8j">1</td>
+                <td class="tg-baqh">Arm bicep curl</td>
+                <td class="tg-baqh">10</td>
+                <td class="tg-baqh">3</td>
+                <td class="tg-baqh">Squat</td>
+              </tr>
+              <tr>
+                <td class="tg-baqh">3</td>
+                <td class="tg-8d8j">1</td>
+                <td class="tg-baqh">Wave hello</td>
+                <td class="tg-baqh">11</td>
+                <td class="tg-baqh">4</td>
+                <td class="tg-baqh">Jump in place</td>
+              </tr>
+              <tr>
+                <td class="tg-baqh">4</td>
+                <td class="tg-8d8j">1</td>
+                <td class="tg-baqh">Punch up forward</td>
+                <td class="tg-baqh">12</td>
+                <td class="tg-baqh">4</td>
+                <td class="tg-baqh">Jog in place</td>
+              </tr>
+              <tr>
+                <td class="tg-baqh">5</td>
+                <td class="tg-8d8j">2</td>
+                <td class="tg-baqh">Leg knee lift</td>
+                <td class="tg-baqh">13</td>
+                <td class="tg-baqh">4</td>
+                <td class="tg-baqh">Jumping jack</td>
+              </tr>
+              <tr>
+                <td class="tg-baqh">6</td>
+                <td class="tg-8d8j">2</td>
+                <td class="tg-baqh">Leg abduction</td>
+                <td class="tg-baqh">14</td>
+                <td class="tg-baqh">3</td>
+                <td class="tg-baqh">Standing side bend</td>
+              </tr>
+              <tr>
+                <td class="tg-baqh">7</td>
+                <td class="tg-8d8j">2</td>
+                <td class="tg-baqh">Leg pulling</td>
+                <td class="tg-baqh">15</td>
+                <td class="tg-baqh">4</td>
+                <td class="tg-baqh">Hop on one foot</td>
+              </tr>
+              <tr>
+                <td class="tg-baqh">8</td>
+                <td class="tg-baqh">4</td>
+                <td class="tg-baqh">Elbow-to-knee</td>
+                <td class="tg-baqh">16</td>
+                <td class="tg-baqh">3</td>
+                <td class="tg-baqh">Roll wrists &amp; ankles</td>
+              </tr>
+            </tbody>
+            </table>
+            </center>
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            <br>
+            We introduce the Sparse and Privacy-enhanced Dataset for Human Pose 
+            Estimation (<b>SPHP</b>), which consists of synchronized, 
+            complementary images of edge and motion vectors along with ground 
+            truth labels for 13 joints.
+
+            We collect data from 40 participants (20 male and 20 female). 
+            Participants performed 16 fitness-related actions, which are 
+            categorized into four classes based on the type of movement: 
+            <ul>
+              <li><b>Class 1:</b> upper-body movements</li>
+              <li><b>Class 2:</b> lower-body movements</li>
+              <li><b>Class 3:</b> slow whole-body movements</li>
+              <li><b>Class 4:</b> fast whole-body movements</li>
+            </ul>
+            To diversify the viewing angles of our dataset, we apply a novel 
+            strategy to capture each action from multiple perspectives. 
+            Firstly, we place two cameras within an interval of 45 degrees. 
+            Then, we instruct the participants to face various directions 
+            (i.e., 0, 15, 30, and 45 degrees, respectively) while capturing 
+            their actions. In each direction, every participant will perform 
+            four actions, totaling 16 actions, as listed in the table above.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Sparse Representation -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Sparse Representation</h2>
+          <div class="content has-text-justified">
+            <p>
+              <ul>
+                <li><b>Edge Image</b></li>
+                MVS uses an efficient hardware implementation of edge detection, 
+                similar to Canny edge detection, to generate edge 
+                images. Each pixel in the edge image has a value within the range 
+                of $\{0, 255\}$. A higher value indicates a stronger intensity of 
+                the edge.
+                <br>
+                <br>
+                <li><b>Motion Vector</b></li>
+                Inspired by the motion detection of the Drosophila visual system
+                and designed with patent-pending pixel-sensing technology, MVS 
+                detects vertical and horizontal motion vectors, denoted as 
+                $MV_X$ and $MV_Y$, by analyzing changes in illumination. 
+                Each value falls within the range of $\{-128, 128\}$. The magnitude 
+                and sign of a value represent the strength and direction of 
+                motion.
+              </ul>
+            </p>
+          </div>
+      </div>
+    </div>
+
+    <!-- Fusion Model -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Fusion Model</h2>
+        <center><img src="static/images/early_fusion3d.png" width="70%"></center>
+          <div class="content has-text-justified">
+            <p>
+              Edge and motion vector information complement each other. While edge 
+              is sufficient for detecting clear and non-blurred body joints, 
+              incorporating motion vectors into our model can effectively address 
+              the challenges posed by fast movements and overlapping boundaries, 
+              which may confuse edge-based HPE models. 
+              <br>
+              <br>
+              Hence, we aim to combine the complementary information of edge and 
+              motion vectors while keeping our model compact and efficient. We 
+              directly concatenate an edge image and a two-directional motion 
+              vector image, proposing the early fusion model (referred to as FS) 
+              as illustrated in the figure below. Our FS model can leverage 
+              various single-branch network architectures designed for compactness 
+              and efficiency.
+            </p>
+          </div>
+      </div>
+    </div>
+
+    <!-- Evaluation Metric -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Evaluation Metric</h2>
+          <div class="content has-text-justified">
+            <p>
+              Mean Per Joint Position Error (<b>MPJPE</b>) is chosen for evaluation. 
+              It calculates the Euclidean distance between predicted positions 
+              $\hat{y_{i}}$ and ground truth positions $y_{i}$ for each joint, 
+              where $N$ is the number of joints.
+
+              <center>
+                $\displaystyle \textrm{MPJPE} = \frac{1}{N}\sum_{i} \| y_{i}-\hat{y_{i}}\|$
+              </center>
+            </p>
+          </div>
+      </div>
+    </div>
+
+    <!-- Quantitative Results -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Quantitative Results</h2>
+          <div class="content has-text-justified">
+            <p>
+              <style type="text/css">
+                .tg  {border-collapse:collapse;border-spacing:0;}
+                .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+                  overflow:hidden;padding:10px 5px;word-break:normal;}
+                .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+                  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+                .tg .tg-vxga{background-color:#ffffff;text-align:center;vertical-align:middle}
+                .tg .tg-zskp{background-color:#ffffff;color:#009901;font-weight:bold;text-align:right;vertical-align:middle}
+                .tg .tg-aag1{background-color:#ffffff;text-align:right;vertical-align:middle}
+                .tg .tg-e0f5{background-color:#ffffff;color:#009901;text-align:center;vertical-align:middle}
+                </style>
+                <table class="tg">
+                <thead>
+                  <tr>
+                    <th class="tg-vxga" colspan="14"></th>
+                  </tr>
+                  <tr>
+                    <th class="tg-vxga" rowspan="2"><b>Backbone</b></th>
+                    <th class="tg-vxga" rowspan="2"><b>Params#</b></th>
+                    <th class="tg-vxga" rowspan="2"><b>Input</b></th>
+                    <th class="tg-vxga" colspan="5"><b>Traditional Convolution</b></th>
+                    <th class="tg-vxga" rowspan="2">　<br></th>
+                    <th class="tg-vxga" colspan="5"><b>Sparse Convolution</b></th>
+                  </tr>
+                  <tr>
+                    <th class="tg-vxga"><b>C1</b></th>
+                    <th class="tg-vxga"><b>C2</b></th>
+                    <th class="tg-vxga"><b>C3</b></th>
+                    <th class="tg-vxga"><b>C4</b></th>
+                    <th class="tg-vxga"><b>Mean</b></th>
+                    <th class="tg-vxga"><b>C1</b></th>
+                    <th class="tg-vxga"><b>C2</b></th>
+                    <th class="tg-vxga"><b>C3</b></th>
+                    <th class="tg-vxga"><b>C4</b></th>
+                    <th class="tg-vxga"><b>Mean</b></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="tg-vxga" rowspan="4">DHP19</td>
+                    <td class="tg-vxga" rowspan="4">218K</td>
+                    <td class="tg-vxga">GR</td>
+                    <td class="tg-aag1">2.62</td>
+                    <td class="tg-aag1">3.08</td>
+                    <td class="tg-aag1">3.33</td>
+                    <td class="tg-aag1">3.62</td>
+                    <td class="tg-aag1">3.20</td>
+                    <td class="tg-aag1" rowspan="4">　<br>　<br>　<br>　</td>
+                    <td class="tg-aag1">-</td>
+                    <td class="tg-aag1">-</td>
+                    <td class="tg-aag1">-</td>
+                    <td class="tg-aag1">-</td>
+                    <td class="tg-aag1">-</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-vxga">MV</td>
+                    <td class="tg-aag1">16.96</td>
+                    <td class="tg-aag1">6.50</td>
+                    <td class="tg-aag1">6.43</td>
+                    <td class="tg-aag1">5.11</td>
+                    <td class="tg-aag1">8.66</td>
+                    <td class="tg-aag1">56.96</td>
+                    <td class="tg-aag1">27.12</td>
+                    <td class="tg-aag1">25.86</td>
+                    <td class="tg-aag1">14.12</td>
+                    <td class="tg-aag1">30.20</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-vxga">ED</td>
+                    <td class="tg-aag1">3.14</td>
+                    <td class="tg-aag1">3.64</td>
+                    <td class="tg-aag1">3.71</td>
+                    <td class="tg-aag1">4.03</td>
+                    <td class="tg-aag1">3.65</td>
+                    <td class="tg-aag1">5.18</td>
+                    <td class="tg-aag1">6.47</td>
+                    <td class="tg-aag1">5.94</td>
+                    <td class="tg-aag1">6.76</td>
+                    <td class="tg-aag1">6.10</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-e0f5">FS</td>
+                    <td class="tg-aag1">3.36</td>
+                    <td class="tg-aag1">3.32</td>
+                    <td class="tg-aag1">3.56</td>
+                    <td class="tg-aag1">3.88</td>
+                    <td class="tg-zskp">3.56</td>
+                    <td class="tg-aag1">5.00</td>
+                    <td class="tg-aag1">6.52</td>
+                    <td class="tg-aag1">6.10</td>
+                    <td class="tg-aag1">6.45</td>
+                    <td class="tg-zskp">6.01</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-vxga" rowspan="4">U-Net-Small</td>
+                    <td class="tg-vxga" rowspan="4">1.9M</td>
+                    <td class="tg-vxga">GR</td>
+                    <td class="tg-aag1">1.82</td>
+                    <td class="tg-aag1">2.08</td>
+                    <td class="tg-aag1">2.13</td>
+                    <td class="tg-aag1">2.48</td>
+                    <td class="tg-aag1">2.15</td>
+                    <td class="tg-aag1" rowspan="4">　<br>　<br>　<br>　</td>
+                    <td class="tg-aag1">-</td>
+                    <td class="tg-aag1">-</td>
+                    <td class="tg-aag1">-</td>
+                    <td class="tg-aag1">-</td>
+                    <td class="tg-aag1"></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-vxga">MV</td>
+                    <td class="tg-aag1">19.56</td>
+                    <td class="tg-aag1">5.41</td>
+                    <td class="tg-aag1">5.69</td>
+                    <td class="tg-aag1">3.82</td>
+                    <td class="tg-aag1">8.52</td>
+                    <td class="tg-aag1">54.29</td>
+                    <td class="tg-aag1">20.93</td>
+                    <td class="tg-aag1">19.25</td>
+                    <td class="tg-aag1">8.11</td>
+                    <td class="tg-aag1">24.85</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-vxga">ED</td>
+                    <td class="tg-aag1">3.20</td>
+                    <td class="tg-aag1">3.49</td>
+                    <td class="tg-aag1">3.19</td>
+                    <td class="tg-aag1">3.49</td>
+                    <td class="tg-aag1">3.35</td>
+                    <td class="tg-aag1">3.35</td>
+                    <td class="tg-aag1">3.78</td>
+                    <td class="tg-aag1">3.48</td>
+                    <td class="tg-aag1">3.95</td>
+                    <td class="tg-aag1">3.65</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-e0f5">FS</td>
+                    <td class="tg-aag1">3.32</td>
+                    <td class="tg-aag1">2.91</td>
+                    <td class="tg-aag1">2.79</td>
+                    <td class="tg-aag1">3.18</td>
+                    <td class="tg-zskp">3.07</td>
+                    <td class="tg-aag1">3.42</td>
+                    <td class="tg-aag1">3.61</td>
+                    <td class="tg-aag1">3.41</td>
+                    <td class="tg-aag1">3.69</td>
+                    <td class="tg-zskp">3.54</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-vxga" rowspan="4">U-Net-Large</td>
+                    <td class="tg-vxga" rowspan="4">7.7M</td>
+                    <td class="tg-vxga">GR</td>
+                    <td class="tg-aag1">1.73</td>
+                    <td class="tg-aag1">2.14</td>
+                    <td class="tg-aag1">2.00</td>
+                    <td class="tg-aag1">2.33</td>
+                    <td class="tg-aag1">2.06</td>
+                    <td class="tg-aag1" rowspan="4">　<br>　<br>　<br>　</td>
+                    <td class="tg-aag1">-</td>
+                    <td class="tg-aag1">-</td>
+                    <td class="tg-aag1">-</td>
+                    <td class="tg-aag1">-</td>
+                    <td class="tg-aag1">-</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-vxga">MV</td>
+                    <td class="tg-aag1">18.76</td>
+                    <td class="tg-aag1">5.27</td>
+                    <td class="tg-aag1">5.54</td>
+                    <td class="tg-aag1">3.79</td>
+                    <td class="tg-aag1">8.25</td>
+                    <td class="tg-aag1">52.08</td>
+                    <td class="tg-aag1">20.00</td>
+                    <td class="tg-aag1">18.65</td>
+                    <td class="tg-aag1">7.77</td>
+                    <td class="tg-aag1">23.86</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-vxga">ED</td>
+                    <td class="tg-aag1">2.95</td>
+                    <td class="tg-aag1">3.08</td>
+                    <td class="tg-aag1">2.86</td>
+                    <td class="tg-aag1">3.27</td>
+                    <td class="tg-aag1">3.05</td>
+                    <td class="tg-aag1">3.32</td>
+                    <td class="tg-aag1">3.70</td>
+                    <td class="tg-aag1">3.47</td>
+                    <td class="tg-aag1">3.86</td>
+                    <td class="tg-aag1">3.60</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-e0f5">FS</td>
+                    <td class="tg-aag1">2.68</td>
+                    <td class="tg-aag1">2.94</td>
+                    <td class="tg-aag1">2.79</td>
+                    <td class="tg-aag1">3.14</td>
+                    <td class="tg-zskp">2.90</td>
+                    <td class="tg-aag1">3.32</td>
+                    <td class="tg-aag1">3.64</td>
+                    <td class="tg-aag1">3.41</td>
+                    <td class="tg-aag1">3.64</td>
+                    <td class="tg-zskp">3.50</td>
+                  </tr>
+                  <tr>
+                    <th class="tg-vxga" colspan="14"></th>
+                  </tr>
+                </tbody>
+                </table>
+            </p>
+          </div>
+      </div>
+    </div>
+
+    <!-- Qualitative Results -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Qualitative Results</h2>
+          <center><img src="static/images/qual-BMVC.png" width="100%"></center>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{lin2023sparse,
+  title     = {Sparse and Privacy-enhanced Representation for Human Pose Estimation},
+  author    = {Lin, Ting-Ying and Hsieh, Lin-Yung and Wang, Fu-En and Wuen, Wen-Shen and Sun, Min},
+  booktitle = {British Machine Vision Conference (BMVC)},
+  year      = {2023},
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This webpage template is adapted from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>, under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
