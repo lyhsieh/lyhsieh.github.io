@@ -33,4 +33,4 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 
 In 2020, he joined VSLab, where he focused on active learning for his undergraduate research. During that year, he got first place in the <a href="https://2020.meichuhackathon.org/">MeiChu Hackathon Competition</a>. Additionally, he worked as a teaching assistant for Professor Jing-Jia Liou in the Embedding System Laboratory course in 2021. He also obtained an internship as a software engineer at the <a href="https://www.itri.org.tw/english/index.aspx">Industrial Technology Research Institute</a> (ITRI).
 
-His current research is focused on deep learning and human pose estimation. His crrent research is to achieve human pose estimation using motion sensors. Moreover, <a href="https://lyhsieh.github.io/sphp/">his paper</a> has been accepted by <a href="https://bmvc2023.org/">BMVC 2023</a>.
+His current research is focused on deep learning, to achieve efficient human pose estimation using motion sensors. Moreover, <a href="https://lyhsieh.github.io/sphp/">his paper</a> has been accepted by <a href="https://bmvc2023.org/">BMVC 2023</a>.
