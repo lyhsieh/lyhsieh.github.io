@@ -6,7 +6,7 @@ subtitle: M.S. Student | Computer Vision | Deep Learning
 
 profile:
   align: right
-  image: leo.png
+  image: IMG_7565.jpg
   image_circular: true # crops the image to make it circular
   address: >
     <center>Hsinchu, Taiwan</center>
