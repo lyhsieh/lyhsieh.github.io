@@ -5,7 +5,7 @@ description: 2020 梅竹黑客松
 img: assets/img/proj_preview/meichu.jpg
 importance: 1
 category: 
-giscus_comments: true
+giscus_comments: false
 related_publications: antal2018intrusion
 ---
 
