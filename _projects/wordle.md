@@ -17,10 +17,10 @@ giscus_comments: false
 ## Getting Started 
 Please refer to the <a href="https://github.com/lyhsieh/wordle-solver" target="_blank">repository</a> or <a href="https://youtu.be/_JfcOB2PsCU" target="_blank">demo video</a>. The detailed guideline is provided there. 
 
-## Demo Video
+<!-- ## Demo Video
 <center>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_JfcOB2PsCU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</center>
+</center> -->
 
 
 ## Execution Result
